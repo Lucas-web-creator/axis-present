@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AXIS Present — Ambiente de criação e edição de apresentações."
+    >
+
+    <title>Edition — AXIS Present</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ==================================================
+         APPLICATION
+    ================================================== -->
+
+    <div class="application">
+
+
+        <!-- ==================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+            <div class="topbar__left">
+
+                <a
+                    href="../Menu/index.html"
+                    class="topbar__logo"
+                    aria-label="Voltar para o Menu"
+                >
+                    AXIS Present
+                </a>
+
+
+                <div class="topbar__file">
+
+                    <span
+                        class="topbar__file-name"
+                        data-element="file-name"
+                    >
+                        Apresentação sem título
+                    </span>
+
+                    <span
+                        class="topbar__file-status"
+                        data-element="file-status"
+                    >
+                        Salvo
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar__center">
+
+                <div
+                    class="topbar__quick-access"
+                    aria-label="Acesso rápido"
+                >
+
+                    <button
+                        type="button"
+                        class="topbar__button"
+                        data-action="undo"
+                        aria-label="Desfazer"
+                    >
+                        Desfazer
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="topbar__button"
+                        data-action="redo"
+                        aria-label="Refazer"
+                    >
+                        Refazer
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="topbar__button"
+                        data-action="save"
+                        aria-label="Salvar"
+                    >
+                        Salvar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar__right">
+
+                <button
+                    type="button"
+                    class="topbar__button"
+                    data-action="present"
+                >
+                    Apresentar
+                </button>
+
+
+                <button
+                    type="button"
+                    class="topbar__button"
+                    data-action="account"
+                >
+                    Conta
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ==================================================
+             RIBBON
+        ================================================== -->
+
+        <section class="ribbon">
+
+
+            <!-- ==================================================
+                 RIBBON TABS
+            ================================================== -->
+
+            <nav
+                class="ribbon__tabs"
+                aria-label="Ferramentas do editor"
+            >
+
+                <button
+                    type="button"
+                    class="ribbon__tab ribbon__tab--active"
+                    data-ribbon-tab="home"
+                >
+                    Página Inicial
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ribbon__tab"
+                    data-ribbon-tab="insert"
+                >
+                    Inserir
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ribbon__tab"
+                    data-ribbon-tab="design"
+                >
+                    Design
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ribbon__tab"
+                    data-ribbon-tab="transitions"
+                >
+                    Transições
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ribbon__tab"
+                    data-ribbon-tab="animations"
+                >
+                    Animações
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ribbon__tab"
+                    data-ribbon-tab="slide-show"
+                >
+                    Apresentação
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ribbon__tab"
+                    data-ribbon-tab="view"
+                >
+                    Exibir
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ribbon__tab"
+                    data-ribbon-tab="help"
+                >
+                    Ajuda
+                </button>
+
+            </nav>
+
+
+
+            <!-- ==================================================
+                 HOME
+            ================================================== -->
+
+            <div
+                class="ribbon__panel ribbon__panel--active"
+                data-ribbon-panel="home"
+            >
+
+
+                <!-- SLIDES -->
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="new-slide"
+                        >
+                            Novo Slide
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="duplicate-slide"
+                        >
+                            Duplicar
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="delete-slide"
+                        >
+                            Excluir
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Slides
+                    </span>
+
+                </section>
+
+
+
+                <!-- FONTE -->
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="bold"
+                        >
+                            Negrito
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="italic"
+                        >
+                            Itálico
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="underline"
+                        >
+                            Sublinhado
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Fonte
+                    </span>
+
+                </section>
+
+
+
+                <!-- PARÁGRAFO -->
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="align-left"
+                        >
+                            Esquerda
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="align-center"
+                        >
+                            Centro
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="align-right"
+                        >
+                            Direita
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Alinhamento
+                    </span>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 INSERT
+            ================================================== -->
+
+            <div
+                class="ribbon__panel"
+                data-ribbon-panel="insert"
+            >
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control ribbon-control--large"
+                            data-action="insert-textbox"
+                        >
+                            Caixa de Texto
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Texto
+                    </span>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 DESIGN
+            ================================================== -->
+
+            <div
+                class="ribbon__panel"
+                data-ribbon-panel="design"
+            >
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="slide-background"
+                        >
+                            Plano de Fundo
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Personalizar
+                    </span>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 TRANSITIONS
+            ================================================== -->
+
+            <div
+                class="ribbon__panel"
+                data-ribbon-panel="transitions"
+            >
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="transition-none"
+                        >
+                            Nenhuma
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="transition-fade"
+                        >
+                            Esmaecer
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Transição
+                    </span>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 ANIMATIONS
+            ================================================== -->
+
+            <div
+                class="ribbon__panel"
+                data-ribbon-panel="animations"
+            >
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="animation-preview"
+                        >
+                            Visualizar
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Animações
+                    </span>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 SLIDE SHOW
+            ================================================== -->
+
+            <div
+                class="ribbon__panel"
+                data-ribbon-panel="slide-show"
+            >
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control ribbon-control--large"
+                            data-action="start-from-current"
+                        >
+                            Apresentar
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Apresentação
+                    </span>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 VIEW
+            ================================================== -->
+
+            <div
+                class="ribbon__panel"
+                data-ribbon-panel="view"
+            >
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="normal-view"
+                        >
+                            Normal
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="zoom-options"
+                        >
+                            Zoom
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Exibição
+                    </span>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 HELP
+            ================================================== -->
+
+            <div
+                class="ribbon__panel"
+                data-ribbon-panel="help"
+            >
+
+                <section class="ribbon-group">
+
+                    <div class="ribbon-group__content">
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="help"
+                        >
+                            Ajuda
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="ribbon-control"
+                            data-action="about"
+                        >
+                            Sobre
+                        </button>
+
+                    </div>
+
+
+                    <span class="ribbon-group__label">
+                        Suporte
+                    </span>
+
+                </section>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             EDITOR
+        ================================================== -->
+
+        <main class="editor">
+
+
+            <!-- ==================================================
+                 SLIDES PANEL
+            ================================================== -->
+
+            <aside
+                class="slides-panel"
+                aria-label="Painel de slides"
+            >
+
+                <div class="slides-panel__header">
+
+                    <h2 class="slides-panel__title">
+                        Slides
+                    </h2>
+
+
+                    <button
+                        type="button"
+                        class="slides-panel__button"
+                        data-action="new-slide"
+                        aria-label="Novo slide"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="slides-panel__content"
+                    data-element="slides"
+                ></div>
+
+            </aside>
+
+
+
+            <!-- ==================================================
+                 WORKSPACE
+            ================================================== -->
+
+            <section class="workspace">
+
+
+                <!-- TOOLBAR -->
+
+                <div class="workspace__toolbar">
+
+                    <div class="workspace__toolbar-left">
+
+                        <button
+                            type="button"
+                            class="workspace__button"
+                            data-action="previous-slide"
+                            aria-label="Slide anterior"
+                        >
+                            Anterior
+                        </button>
+
+
+                        <span
+                            class="workspace__slide-counter"
+                            data-element="slide-counter"
+                        >
+                            Slide 1 de 1
+                        </span>
+
+
+                        <button
+                            type="button"
+                            class="workspace__button"
+                            data-action="next-slide"
+                            aria-label="Próximo slide"
+                        >
+                            Próximo
+                        </button>
+
+                    </div>
+
+
+                    <div class="workspace__toolbar-center">
+
+                        <span class="workspace__document-state">
+                            Edição
+                        </span>
+
+                    </div>
+
+
+                    <div class="workspace__toolbar-right">
+
+                        <button
+                            type="button"
+                            class="workspace__button"
+                            data-action="duplicate-slide"
+                        >
+                            Duplicar
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="workspace__button"
+                            data-action="delete-slide"
+                        >
+                            Excluir
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CANVAS -->
+
+                <div class="workspace__canvas-area">
+
+                    <div
+                        class="ruler ruler--horizontal"
+                        aria-hidden="true"
+                    ></div>
+
+
+                    <div
+                        class="ruler ruler--vertical"
+                        aria-hidden="true"
+                    ></div>
+
+
+                    <div
+                        class="workspace__canvas"
+                        data-element="canvas"
+                    >
+
+                        <!-- O slide será criado pelo JavaScript -->
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- NOTES -->
+
+                <section class="notes-panel">
+
+                    <div class="notes-panel__header">
+
+                        <span class="notes-panel__label">
+                            Anotações
+                        </span>
+
+                    </div>
+
+
+                    <div class="notes-panel__content">
+
+                        <textarea
+                            class="notes-panel__textarea"
+                            data-element="slide-notes"
+                            placeholder="Clique para adicionar anotações..."
+                            aria-label="Anotações do slide"
+                        ></textarea>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 PROPERTIES
+            ================================================== -->
+
+            <aside
+                class="properties-panel"
+                aria-label="Painel de propriedades"
+            >
+
+                <div class="properties-panel__header">
+
+                    <h2 class="properties-panel__title">
+                        Propriedades
+                    </h2>
+
+
+                    <button
+                        type="button"
+                        class="properties-panel__close"
+                        data-action="close-properties"
+                        aria-label="Fechar propriedades"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+                <div class="properties-panel__content">
+
+
+                    <!-- SLIDE -->
+
+                    <section class="properties-group">
+
+                        <h3 class="properties-group__title">
+                            Slide
+                        </h3>
+
+
+                        <div class="properties-group__content">
+
+                            <button
+                                type="button"
+                                class="properties-control"
+                                data-action="slide-background"
+                            >
+                                Plano de Fundo
+                            </button>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- ELEMENT -->
+
+                    <section class="properties-group">
+
+                        <h3 class="properties-group__title">
+                            Elemento
+                        </h3>
+
+
+                        <div
+                            class="properties-group__content"
+                            data-element="selected-element-properties"
+                        >
+
+                            <p class="properties-group__empty">
+                                Selecione um elemento para visualizar suas propriedades.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </aside>
+
+        </main>
+
+
+
+        <!-- ==================================================
+             STATUS BAR
+        ================================================== -->
+
+        <footer class="statusbar">
+
+
+            <div class="statusbar__left">
+
+                <span
+                    class="statusbar__item"
+                    data-element="status-slide"
+                >
+                    Slide 1 de 1
+                </span>
+
+
+                <span
+                    class="statusbar__item"
+                    data-element="status-word-count"
+                >
+                    0 palavras
+                </span>
+
+
+                <span
+                    class="statusbar__item"
+                    data-element="status-language"
+                >
+                    Português (Brasil)
+                </span>
+
+            </div>
+
+
+
+            <div class="statusbar__center">
+
+                <button
+                    type="button"
+                    class="statusbar__view-button is-active"
+                    data-action="normal-view"
+                >
+                    Normal
+                </button>
+
+
+                <button
+                    type="button"
+                    class="statusbar__view-button"
+                    data-action="slide-show"
+                >
+                    Apresentação
+                </button>
+
+            </div>
+
+
+
+            <div class="statusbar__right">
+
+                <button
+                    type="button"
+                    class="statusbar__zoom-button"
+                    data-action="zoom-out"
+                    aria-label="Diminuir zoom"
+                >
+                    −
+                </button>
+
+
+                <input
+                    type="range"
+                    class="statusbar__zoom-range"
+                    min="10"
+                    max="400"
+                    value="100"
+                    data-element="zoom"
+                    aria-label="Zoom"
+                >
+
+
+                <button
+                    type="button"
+                    class="statusbar__zoom-button"
+                    data-action="zoom-in"
+                    aria-label="Aumentar zoom"
+                >
+                    +
+                </button>
+
+
+                <button
+                    type="button"
+                    class="statusbar__zoom-value"
+                    data-action="zoom-options"
+                >
+                    100%
+                </button>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FILE INPUT
+    ================================================== -->
+
+    <input
+        type="file"
+        id="presentation-file-input"
+        class="visually-hidden"
+        accept=".ppt,.pptx,.odp"
+        aria-hidden="true"
+    >
+
+
+
+    <!-- ==================================================
+         SCRIPT
+    ================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="AXIS Present - Crie, edite e organize suas apresentações."
+    >
+
+    <title>AXIS Present</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="header__brand">
+            <a
+                href="index.html"
+                class="header__logo"
+                aria-label="AXIS Present"
+            >
+                <img
+                    src="logooficial.jpg"
+                    alt="AXIS Present"
+                    class="header__logo-image"
+                >
+            </a>
+        </div>
+
+        <nav class="header__navigation" aria-label="Navegação principal">
+
+            <ul class="header__navigation-list">
+
+                <li class="header__navigation-item">
+                    <a
+                        href="index.html"
+                        class="header__navigation-link"
+                    >
+                        Menu
+                    </a>
+                </li>
+
+                <li class="header__navigation-item">
+                    <a
+                        href="../Models/index.html"
+                        class="header__navigation-link"
+                    >
+                        Models
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header__actions">
+
+            <button
+                type="button"
+                class="header__action"
+                aria-label="Abrir configurações"
+            >
+                Configurações
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <section class="welcome">
+
+            <div class="welcome__content">
+
+                <span class="welcome__label">
+                    AXIS Present
+                </span>
+
+                <h1 class="welcome__title">
+                    O que você deseja criar?
+                </h1>
+
+                <p class="welcome__description">
+                    Crie uma nova apresentação ou importe
+                    uma apresentação existente.
+                </p>
+
+            </div>
+
+
+            <div class="welcome__actions">
+
+                <button
+                    type="button"
+                    class="welcome__button welcome__button--primary"
+                    data-action="new-presentation"
+                >
+                    Nova apresentação
+                </button>
+
+                <button
+                    type="button"
+                    class="welcome__button welcome__button--secondary"
+                    data-action="import-presentation"
+                >
+                    Importar apresentação
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="recent">
+
+            <div class="section-header">
+
+                <div class="section-header__content">
+
+                    <h2 class="section-header__title">
+                        Apresentações recentes
+                    </h2>
+
+                    <p class="section-header__description">
+                        Suas apresentações criadas e utilizadas recentemente
+                        aparecerão aqui.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="section-header__action"
+                >
+                    Ver todos
+                </button>
+
+            </div>
+
+
+            <div class="presentation-grid">
+
+                <article class="presentation-card presentation-card--empty">
+
+                    <button
+                        type="button"
+                        class="presentation-card__create"
+                        data-action="new-presentation"
+                    >
+
+                        <span class="presentation-card__create-icon">
+                            +
+                        </span>
+
+                        <span class="presentation-card__create-text">
+                            Criar nova apresentação
+                        </span>
+
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="models">
+
+            <div class="section-header">
+
+                <div class="section-header__content">
+
+                    <h2 class="section-header__title">
+                        Modelos
+                    </h2>
+
+                    <p class="section-header__description">
+                        Comece uma apresentação utilizando um modelo pré-definido.
+                    </p>
+
+                </div>
+
+                <a
+                    href="../Models/index.html"
+                    class="section-header__link"
+                >
+                    Ver modelos
+                </a>
+
+            </div>
+
+
+            <div class="model-grid">
+
+                <article class="model-card">
+
+                    <div class="model-card__preview">
+                        <span>Modelo</span>
+                    </div>
+
+                    <div class="model-card__content">
+
+                        <h3 class="model-card__title">
+                            Apresentação em branco
+                        </h3>
+
+                        <p class="model-card__description">
+                            Comece uma apresentação do zero.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="model-card">
+
+                    <div class="model-card__preview">
+                        <span>Modelo</span>
+                    </div>
+
+                    <div class="model-card__content">
+
+                        <h3 class="model-card__title">
+                            Apresentação profissional
+                        </h3>
+
+                        <p class="model-card__description">
+                            Um modelo para apresentações profissionais.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="model-card">
+
+                    <div class="model-card__preview">
+                        <span>Modelo</span>
+                    </div>
+
+                    <div class="model-card__content">
+
+                        <h3 class="model-card__title">
+                            Apresentação acadêmica
+                        </h3>
+
+                        <p class="model-card__description">
+                            Estrutura para apresentações acadêmicas.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer__content">
+
+            <p class="footer__copyright">
+                AXIS Present
+            </p>
+
+            <nav
+                class="footer__navigation"
+                aria-label="Navegação secundária"
+            >
+
+                <a
+                    href="../Models/index.html"
+                    class="footer__link"
+                >
+                    Models
+                </a>
+
+                <a
+                    href="../Edition/index.html"
+                    class="footer__link"
+                >
+                    Edition
+                </a>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AXIS Present - Biblioteca de modelos para apresentações."
+    >
+
+    <title>Models — AXIS Present</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         APPLICATION
+    ================================================== -->
+
+    <div class="models-app">
+
+
+        <!-- ==================================================
+             HEADER
+        ================================================== -->
+
+        <header class="models-header">
+
+
+            <!-- LOGO -->
+
+            <div class="models-header__left">
+
+                <a
+                    href="../Menu/index.html"
+                    class="models-logo"
+                    aria-label="Voltar para o Menu"
+                >
+
+                    <span class="models-logo__mark">
+                        A
+                    </span>
+
+                    <span class="models-logo__text">
+                        AXIS Present
+                    </span>
+
+                </a>
+
+
+                <div class="models-header__divider"></div>
+
+
+                <div class="models-header__title">
+
+                    <span class="models-header__eyebrow">
+                        Biblioteca
+                    </span>
+
+                    <h1>
+                        Models
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <!-- HEADER ACTIONS -->
+
+            <div class="models-header__right">
+
+                <button
+                    type="button"
+                    class="models-header__button"
+                    data-action="open-presentation"
+                >
+                    Abrir apresentação
+                </button>
+
+
+                <button
+                    type="button"
+                    class="models-header__button models-header__button--primary"
+                    data-action="create-presentation"
+                >
+                    Nova apresentação
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ==================================================
+             MAIN
+        ================================================== -->
+
+        <main class="models-main">
+
+
+            <!-- ==================================================
+                 HERO
+            ================================================== -->
+
+            <section class="models-hero">
+
+
+                <div class="models-hero__content">
+
+                    <span class="models-hero__label">
+                        AXIS PRESENT
+                    </span>
+
+                    <h2 class="models-hero__title">
+                        Comece com uma boa estrutura.
+                    </h2>
+
+                    <p class="models-hero__description">
+                        Escolha um modelo e transforme a estrutura
+                        em uma apresentação completa.
+                    </p>
+
+                </div>
+
+
+                <!-- SEARCH -->
+
+                <div class="models-search">
+
+                    <label
+                        for="model-search"
+                        class="visually-hidden"
+                    >
+                        Pesquisar modelos
+                    </label>
+
+                    <span
+                        class="models-search__icon"
+                        aria-hidden="true"
+                    >
+                        ⌕
+                    </span>
+
+                    <input
+                        type="search"
+                        id="model-search"
+                        class="models-search__input"
+                        placeholder="Pesquisar modelos..."
+                        autocomplete="off"
+                        data-element="model-search"
+                    >
+
+                    <button
+                        type="button"
+                        class="models-search__clear"
+                        data-action="clear-search"
+                        aria-label="Limpar pesquisa"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 CONTENT
+            ================================================== -->
+
+            <section class="models-content">
+
+
+                <!-- ==================================================
+                     SIDEBAR / CATEGORIES
+                ================================================== -->
+
+                <aside class="models-sidebar">
+
+
+                    <div class="models-sidebar__header">
+
+                        <span class="models-sidebar__label">
+                            Explorar
+                        </span>
+
+                        <h2>
+                            Categorias
+                        </h2>
+
+                    </div>
+
+
+                    <nav
+                        class="models-categories"
+                        aria-label="Categorias de modelos"
+                    >
+
+
+                        <button
+                            type="button"
+                            class="models-category models-category--active"
+                            data-category="all"
+                        >
+
+                            <span class="models-category__icon">
+                                ◈
+                            </span>
+
+                            <span class="models-category__text">
+                                Todos
+                            </span>
+
+                            <span
+                                class="models-category__count"
+                                data-category-count="all"
+                            >
+                                0
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="models-category"
+                            data-category="business"
+                        >
+
+                            <span class="models-category__icon">
+                                ▣
+                            </span>
+
+                            <span class="models-category__text">
+                                Negócios
+                            </span>
+
+                            <span
+                                class="models-category__count"
+                                data-category-count="business"
+                            >
+                                0
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="models-category"
+                            data-category="education"
+                        >
+
+                            <span class="models-category__icon">
+                                ▤
+                            </span>
+
+                            <span class="models-category__text">
+                                Educação
+                            </span>
+
+                            <span
+                                class="models-category__count"
+                                data-category-count="education"
+                            >
+                                0
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="models-category"
+                            data-category="portfolio"
+                        >
+
+                            <span class="models-category__icon">
+                                ◫
+                            </span>
+
+                            <span class="models-category__text">
+                                Portfólio
+                            </span>
+
+                            <span
+                                class="models-category__count"
+                                data-category-count="portfolio"
+                            >
+                                0
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="models-category"
+                            data-category="minimal"
+                        >
+
+                            <span class="models-category__icon">
+                                □
+                            </span>
+
+                            <span class="models-category__text">
+                                Minimalista
+                            </span>
+
+                            <span
+                                class="models-category__count"
+                                data-category-count="minimal"
+                            >
+                                0
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="models-category"
+                            data-category="creative"
+                        >
+
+                            <span class="models-category__icon">
+                                ✦
+                            </span>
+
+                            <span class="models-category__text">
+                                Criativo
+                            </span>
+
+                            <span
+                                class="models-category__count"
+                                data-category-count="creative"
+                            >
+                                0
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="models-category"
+                            data-category="presentation"
+                        >
+
+                            <span class="models-category__icon">
+                                ▱
+                            </span>
+
+                            <span class="models-category__text">
+                                Apresentações
+                            </span>
+
+                            <span
+                                class="models-category__count"
+                                data-category-count="presentation"
+                            >
+                                0
+                            </span>
+
+                        </button>
+
+                    </nav>
+
+
+                    <!-- SIDEBAR INFO -->
+
+                    <div class="models-sidebar__info">
+
+                        <span class="models-sidebar__info-title">
+                            AXIS Present
+                        </span>
+
+                        <p>
+                            Modelos são pontos de partida.
+                            Toda apresentação pode ser
+                            personalizada no editor.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+
+
+                <!-- ==================================================
+                     MODELS AREA
+                ================================================== -->
+
+                <section class="models-library">
+
+
+                    <!-- LIBRARY HEADER -->
+
+                    <div class="models-library__header">
+
+
+                        <div>
+
+                            <span class="models-library__eyebrow">
+                                Modelos disponíveis
+                            </span>
+
+                            <h2
+                                class="models-library__title"
+                                data-element="results-title"
+                            >
+                                Todos os modelos
+                            </h2>
+
+                        </div>
+
+
+                        <!-- SORT -->
+
+                        <div class="models-sort">
+
+                            <label
+                                for="model-sort"
+                                class="models-sort__label"
+                            >
+                                Ordenar
+                            </label>
+
+                            <select
+                                id="model-sort"
+                                class="models-sort__select"
+                                data-element="model-sort"
+                            >
+
+                                <option value="recommended">
+                                    Recomendados
+                                </option>
+
+                                <option value="recent">
+                                    Mais recentes
+                                </option>
+
+                                <option value="name">
+                                    Nome
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         MODELS GRID
+                    ================================================== -->
+
+                    <div
+                        class="models-grid"
+                        data-element="models-grid"
+                    >
+
+
+                        <!-- ==================================================
+                             MODEL 01
+                        ================================================== -->
+
+                        <article
+                            class="model-card"
+                            data-model-id="business-modern"
+                            data-category="business"
+                            data-name="Business Modern"
+                        >
+
+                            <div class="model-card__preview">
+
+                                <div
+                                    class="model-preview model-preview--business"
+                                >
+
+                                    <div class="model-preview__top"></div>
+
+                                    <div class="model-preview__content">
+
+                                        <span class="model-preview__small">
+                                            BUSINESS
+                                        </span>
+
+                                        <strong>
+                                            Estratégia
+                                            & Resultados
+                                        </strong>
+
+                                        <span class="model-preview__line"></span>
+
+                                    </div>
+
+                                    <span class="model-preview__number">
+                                        01
+                                    </span>
+
+                                </div>
+
+
+                                <div class="model-card__overlay">
+
+                                    <button
+                                        type="button"
+                                        class="model-card__preview-button"
+                                        data-action="preview-model"
+                                        data-model-id="business-modern"
+                                    >
+                                        Visualizar
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="model-card__body">
+
+                                <div>
+
+                                    <h3 class="model-card__title">
+                                        Business Modern
+                                    </h3>
+
+                                    <p class="model-card__description">
+                                        Estrutura moderna para
+                                        apresentações profissionais.
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="model-card__use"
+                                    data-action="use-model"
+                                    data-model-id="business-modern"
+                                >
+                                    Usar
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             MODEL 02
+                        ================================================== -->
+
+                        <article
+                            class="model-card"
+                            data-model-id="minimal-light"
+                            data-category="minimal"
+                            data-name="Minimal Light"
+                        >
+
+                            <div class="model-card__preview">
+
+                                <div
+                                    class="model-preview model-preview--minimal"
+                                >
+
+                                    <div class="model-preview__content">
+
+                                        <span class="model-preview__small">
+                                            AXIS
+                                        </span>
+
+                                        <strong>
+                                            Minimal
+                                        </strong>
+
+                                        <span class="model-preview__line"></span>
+
+                                        <span class="model-preview__caption">
+                                            Simples. Claro. Direto.
+                                        </span>
+
+                                    </div>
+
+                                    <span class="model-preview__number">
+                                        02
+                                    </span>
+
+                                </div>
+
+
+                                <div class="model-card__overlay">
+
+                                    <button
+                                        type="button"
+                                        class="model-card__preview-button"
+                                        data-action="preview-model"
+                                        data-model-id="minimal-light"
+                                    >
+                                        Visualizar
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="model-card__body">
+
+                                <div>
+
+                                    <h3 class="model-card__title">
+                                        Minimal Light
+                                    </h3>
+
+                                    <p class="model-card__description">
+                                        Uma estrutura limpa para
+                                        conteúdo objetivo.
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="model-card__use"
+                                    data-action="use-model"
+                                    data-model-id="minimal-light"
+                                >
+                                    Usar
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             MODEL 03
+                        ================================================== -->
+
+                        <article
+                            class="model-card"
+                            data-model-id="creative-orange"
+                            data-category="creative"
+                            data-name="Creative Orange"
+                        >
+
+                            <div class="model-card__preview">
+
+                                <div
+                                    class="model-preview model-preview--creative"
+                                >
+
+                                    <div class="model-preview__shape"></div>
+
+                                    <div class="model-preview__content">
+
+                                        <span class="model-preview__small">
+                                            CREATIVE
+                                        </span>
+
+                                        <strong>
+                                            Ideias em
+                                            movimento
+                                        </strong>
+
+                                    </div>
+
+                                    <span class="model-preview__number">
+                                        03
+                                    </span>
+
+                                </div>
+
+
+                                <div class="model-card__overlay">
+
+                                    <button
+                                        type="button"
+                                        class="model-card__preview-button"
+                                        data-action="preview-model"
+                                        data-model-id="creative-orange"
+                                    >
+                                        Visualizar
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="model-card__body">
+
+                                <div>
+
+                                    <h3 class="model-card__title">
+                                        Creative Orange
+                                    </h3>
+
+                                    <p class="model-card__description">
+                                        Visual marcante para
+                                        apresentações criativas.
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="model-card__use"
+                                    data-action="use-model"
+                                    data-model-id="creative-orange"
+                                >
+                                    Usar
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             MODEL 04
+                        ================================================== -->
+
+                        <article
+                            class="model-card"
+                            data-model-id="education-focus"
+                            data-category="education"
+                            data-name="Education Focus"
+                        >
+
+                            <div class="model-card__preview">
+
+                                <div
+                                    class="model-preview model-preview--education"
+                                >
+
+                                    <div class="model-preview__header">
+
+                                        <span>
+                                            EDUCAÇÃO
+                                        </span>
+
+                                    </div>
+
+                                    <div class="model-preview__content">
+
+                                        <strong>
+                                            Aprender,
+                                            explicar,
+                                            apresentar.
+                                        </strong>
+
+                                        <div class="model-preview__blocks">
+
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <span class="model-preview__number">
+                                        04
+                                    </span>
+
+                                </div>
+
+
+                                <div class="model-card__overlay">
+
+                                    <button
+                                        type="button"
+                                        class="model-card__preview-button"
+                                        data-action="preview-model"
+                                        data-model-id="education-focus"
+                                    >
+                                        Visualizar
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="model-card__body">
+
+                                <div>
+
+                                    <h3 class="model-card__title">
+                                        Education Focus
+                                    </h3>
+
+                                    <p class="model-card__description">
+                                        Estrutura organizada para
+                                        conteúdo educacional.
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="model-card__use"
+                                    data-action="use-model"
+                                    data-model-id="education-focus"
+                                >
+                                    Usar
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             MODEL 05
+                        ================================================== -->
+
+                        <article
+                            class="model-card"
+                            data-model-id="portfolio-studio"
+                            data-category="portfolio"
+                            data-name="Portfolio Studio"
+                        >
+
+                            <div class="model-card__preview">
+
+                                <div
+                                    class="model-preview model-preview--portfolio"
+                                >
+
+                                    <div class="model-preview__image"></div>
+
+                                    <div class="model-preview__content">
+
+                                        <span class="model-preview__small">
+                                            PORTFÓLIO
+                                        </span>
+
+                                        <strong>
+                                            Studio
+                                        </strong>
+
+                                    </div>
+
+                                    <span class="model-preview__number">
+                                        05
+                                    </span>
+
+                                </div>
+
+
+                                <div class="model-card__overlay">
+
+                                    <button
+                                        type="button"
+                                        class="model-card__preview-button"
+                                        data-action="preview-model"
+                                        data-model-id="portfolio-studio"
+                                    >
+                                        Visualizar
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="model-card__body">
+
+                                <div>
+
+                                    <h3 class="model-card__title">
+                                        Portfolio Studio
+                                    </h3>
+
+                                    <p class="model-card__description">
+                                        Apresente projetos,
+                                        trabalhos e resultados.
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="model-card__use"
+                                    data-action="use-model"
+                                    data-model-id="portfolio-studio"
+                                >
+                                    Usar
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             MODEL 06
+                        ================================================== -->
+
+                        <article
+                            class="model-card"
+                            data-model-id="presentation-core"
+                            data-category="presentation"
+                            data-name="Presentation Core"
+                        >
+
+                            <div class="model-card__preview">
+
+                                <div
+                                    class="model-preview model-preview--core"
+                                >
+
+                                    <div class="model-preview__content">
+
+                                        <span class="model-preview__small">
+                                            PRESENTATION
+                                        </span>
+
+                                        <strong>
+                                            Core
+                                        </strong>
+
+                                        <span class="model-preview__line"></span>
+
+                                        <span class="model-preview__caption">
+                                            Estrutura essencial
+                                        </span>
+
+                                    </div>
+
+                                    <span class="model-preview__number">
+                                        06
+                                    </span>
+
+                                </div>
+
+
+                                <div class="model-card__overlay">
+
+                                    <button
+                                        type="button"
+                                        class="model-card__preview-button"
+                                        data-action="preview-model"
+                                        data-model-id="presentation-core"
+                                    >
+                                        Visualizar
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="model-card__body">
+
+                                <div>
+
+                                    <h3 class="model-card__title">
+                                        Presentation Core
+                                    </h3>
+
+                                    <p class="model-card__description">
+                                        Um ponto de partida
+                                        versátil para apresentações.
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="model-card__use"
+                                    data-action="use-model"
+                                    data-model-id="presentation-core"
+                                >
+                                    Usar
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         EMPTY STATE
+                    ================================================== -->
+
+                    <div
+                        class="models-empty"
+                        data-element="models-empty"
+                        hidden
+                    >
+
+                        <div class="models-empty__icon">
+                            ×
+                        </div>
+
+                        <h3>
+                            Nenhum modelo encontrado
+                        </h3>
+
+                        <p>
+                            Tente pesquisar por outro termo
+                            ou escolha uma categoria diferente.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="models-empty__button"
+                            data-action="clear-search"
+                        >
+                            Limpar pesquisa
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- ==================================================
+             MODEL PREVIEW MODAL
+        ================================================== -->
+
+        <div
+            class="model-modal"
+            data-element="model-modal"
+            hidden
+        >
+
+            <div
+                class="model-modal__backdrop"
+                data-action="close-preview"
+            ></div>
+
+
+            <section
+                class="model-modal__dialog"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="model-modal-title"
+            >
+
+
+                <header class="model-modal__header">
+
+                    <div>
+
+                        <span class="model-modal__eyebrow">
+                            Visualização
+                        </span>
+
+                        <h2
+                            id="model-modal-title"
+                            class="model-modal__title"
+                            data-element="modal-title"
+                        >
+                            Modelo
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="model-modal__close"
+                        data-action="close-preview"
+                        aria-label="Fechar visualização"
+                    >
+                        ×
+                    </button>
+
+                </header>
+
+
+
+                <div
+                    class="model-modal__preview"
+                    data-element="modal-preview"
+                >
+
+                    <!-- Preview será preenchido pelo JavaScript -->
+
+                </div>
+
+
+
+                <footer class="model-modal__footer">
+
+                    <button
+                        type="button"
+                        class="model-modal__button"
+                        data-action="close-preview"
+                    >
+                        Voltar
+                    </button>
+
+                    <button
+                        type="button"
+                        class="model-modal__button model-modal__button--primary"
+                        data-action="use-preview-model"
+                        data-model-id=""
+                    >
+                        Usar este modelo
+                    </button>
+
+                </footer>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             TOAST / NOTIFICATION
+        ================================================== -->
+
+        <div
+            class="models-toast"
+            data-element="toast"
+            role="status"
+            aria-live="polite"
+            hidden
+        >
+
+            <span
+                class="models-toast__message"
+                data-element="toast-message"
+            >
+                Modelo selecionado.
+            </span>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         SCRIPTS
+    ================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
